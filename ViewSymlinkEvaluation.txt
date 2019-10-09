@@ -1,0 +1,3 @@
+--View Symbolic Link Evaluation
+
+fsutil behavior query SymlinkEvaluation

@@ -1,0 +1,5 @@
+--Make Virtual Drive Letter
+subst z: c:\Windows
+
+--Remove the Virtual Drive Letter
+subst z: /

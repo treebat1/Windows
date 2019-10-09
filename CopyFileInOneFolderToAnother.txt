@@ -1,0 +1,3 @@
+copy \\10.174.110.218\Config\*.dtsConfig c:\common\config\ /y
+
+copy \\10.174.110.218\Config\RadarIssueImport_Test_NR.dtsConfig c:\common\config\ /y

@@ -1,0 +1,1 @@
+Remove-Item –path D:\P_Drive\SQL2016Migration\Test\SQLAgentJobs\Scripts\* -include *.sql

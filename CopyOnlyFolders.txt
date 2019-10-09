@@ -1,0 +1,20 @@
+robocopy \\chdc-cls-dhsql9\FileExtracts\Inbound  y:\dev\inbound /e /xf *
+
+robocopy \\chdc-car-thsql1\FileExtracts\Inbound y:\test\inbound /e /xf *
+
+robocopy \\chdc-car-phsql1\FileExtracts\Inbound y:\prod\inbound /e /xf *
+
+
+robocopy y:\ d:\car\dev\inbound /e /xf *
+robocopy y:\ d:\car\test\inbound /e /xf *
+
+
+robocopy u:\download u:\downloadtest /e /xf *
+
+
+-----------------
+
+
+robocopy "D:\WhereScape\DataMartTEST\Work" "C:\WhereScape\DataMartTEST\Work" /e /xf *
+
+

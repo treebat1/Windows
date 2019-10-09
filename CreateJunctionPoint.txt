@@ -1,0 +1,17 @@
+mklink /J "C:\Wherescape\DataMartDEV\Work" "D:\Wherescape\DataMartDEV\Work"
+mklink /J "C:\Wherescape\DataMartTEST\Work" "D:\Wherescape\DataMartTEST\Work"
+mklink /J "C:\Wherescape\DataMartPROD\Work" "D:\Wherescape\DataMartPROD\Work"
+
+
+
+mklink /J "C:\Wherescape\DataMartDEV\Scheduler" "D:\WhereScape\DataMartDEV\Scheduler"
+
+
+mklink /J "C:\SQL2016Migration" "D:\P_Drive\SQL2016Migration"
+
+
+
+mklink /J "C:\TestSymbolicLink" "D:\TestSymbolicLinkTarget"
+
+
+dir /al /s --which will show junction points as well as symlinks

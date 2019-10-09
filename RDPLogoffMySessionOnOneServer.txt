@@ -1,0 +1,8 @@
+First, check the session number with qwinsta:
+
+QWINSTA /server:YOURCOMPUTERNAMEHERE
+Write down the session ID.
+
+Then use the logoff command:
+
+LOGOFF YOURSESSIONIDHERE /server:YOURCOMPUTERNAMEHERE

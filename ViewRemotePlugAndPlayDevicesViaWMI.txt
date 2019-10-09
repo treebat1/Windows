@@ -1,0 +1,15 @@
+$ArrComputers = "chdc-car-pvsp06" 
+foreach ($Computer in $ArrComputers) 
+{
+write-host ""
+write-host "===================================="
+write-host "Computer: $Computer"
+write-host "===================================="
+
+write-host "-----------------------------------"
+write-host "Win32_PnPEntity instance"
+write-host "-----------------------------------"
+
+$ColItems = Get-WmiObject -Class Win32_PnPEntity -Namespace "root\cimv2" -Computer $Computer
+$ColItems[0..47] | Format-List Name, Status
+}

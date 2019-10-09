@@ -1,0 +1,20 @@
+
+Check Windows Application Log
+index=win sourcetype=WinEventLog:Application OR sourcetype=WMI:WinEventLog:Application OR sourcetype=XmlWinEventLog:Application (host=cam-sdmc-4)
+
+Check Windows System Log
+index=win sourcetype=WinEventLog:System (host=BIA-CHDC-APP12* OR host=BIA-CHDC-APP13* OR host=BIA-CHDC-APP14*) 7036
+
+Query to check what traffic may be blocked on firewall
+index=checkpoint 10.179.156.10 10.159.156.10
+
+Then start searching for blocked port activity on the network.  The sample query that Patrick and I were working on yesterday was this one:
+index=checkpoint 10.179.76.21 action=blocked dest_port!=443 dest_port!=80 dest_port!=2382
+
+Check for block in checkpoint.
+index=checkpoint (src_ip = 10.170.213.177 OR src_ip = 10.170.213.16 OR src_ip = 10.170.213.244 OR src_ip = 10.170.136.196 OR src_ip = 169.254.104.183 OR src_ip = 169.254.2.53)
+
+index=checkpoint dest_ip = "10.25.12.24" AND transport = tcp AND dest_port = 1521 action=blocked AND (src_ip = 10.170.213.177 OR src_ip = 10.170.213.16 OR src_ip = 10.170.213.244 OR src_ip = 10.170.136.196 OR src_ip = 169.254.104.183 OR src_ip = 169.254.2.53)
+
+
+

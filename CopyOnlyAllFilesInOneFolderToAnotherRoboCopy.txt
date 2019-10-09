@@ -1,0 +1,4 @@
+﻿robocopy \\10.174.110.218\Common\DotNET\DEV D:\Common\DotNet\Dev /XO /E
+
+
+robocopy U:\ C:\Users\RX95913\Documents\UDrive /XO /E

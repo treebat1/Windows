@@ -1,0 +1,4 @@
+Dir \\qrm-app-prd1\QRMReports\UB_RISK_MODULE0913
+Dir \\CHDC-CLO-PHQRM1\QRMReports\UB_RISK_MODULE0913
+
+
