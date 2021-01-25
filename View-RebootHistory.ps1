@@ -177,4 +177,4 @@ Function Get-RebootHistory {
 }
 
 
-Get-RebootHistory -ComputerName chdc-car-thsql2
+Get-RebootHistory -ComputerName chdc
